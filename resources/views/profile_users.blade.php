@@ -13,5 +13,5 @@
         <div>Bio: {{$profile->bio}}</div>
         <hr>
     @endforeach
-</body>
+    </body>
 </html>
