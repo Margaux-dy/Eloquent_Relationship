@@ -11,10 +11,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/course/users', [CourseController::class, 'getAllUsers'])->name('getAllUsers');
+Route::get('/course-users', [CourseController::class, 'getAllUsers'])->name('getAllUsers');
 
-Route::get('/user-profiles', [ProfileController::class, 'showAllUsers'])->name('getAllUsers');
+Route::get('/user-profiles', [ProfileController::class, 'showAllUsers'])->name('showAllUsers');
 
-Route::get('/user/{id}/profile', [UserController::class, 'showProfile'])->name('getAllProfile');
+Route::get('/user/{id}/profile', [UserController::class, 'showProfile'])->name('showAllProfile');
 
 Route::get('/user/{id}/courses', [UserController::class, 'getAllCourses'])->name('getAllCourses');
